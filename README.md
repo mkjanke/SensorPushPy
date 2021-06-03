@@ -6,8 +6,8 @@ characteristic. Values are little-endian, least significant byte first.
 Interesting characteristics:
 
 ## Temperature:
-EF090080-11D6-42BA-93B8-9DD7EC090AA9   
-4 bytes int32  Degrees Celsius
+    EF090080-11D6-42BA-93B8-9DD7EC090AA9   
+    4 bytes int32  Degrees Celsius
 
 To read data, write any 32-bit value to the characteristic (e.g. 
 0x01000000). This triggers a sensor read. Once the read is 
@@ -20,8 +20,8 @@ desired, it can be read immediately after without the need for a
 separate read command
 
 ## Humidity:
-EF090081-11D6-42BA-93B8-9DD7EC090AA9
-4 bytes uint32 Percent Relative Humidity
+    EF090081-11D6-42BA-93B8-9DD7EC090AA9
+    4 bytes uint32 Percent Relative Humidity
 
 To read data, write any 32-bit value to the characteristic (e.g. 
 0x01000000). This triggers a sensor read. Once the read is 
